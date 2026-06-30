@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+
+   /* NAVBAR */
+
+
+   nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 12vh;
+    align-items: center;
+   }
+
+   nav .left a{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+   }
+
+      nav .right a{
+    color: black;
+    margin: 0 10px;
+   }
+
+
+
+   /* hero section 1 */
+
+
+
+   .hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 0 50px;
+    margin: 50px 0;  
+    margin-bottom: 100px;
+   }
+
+   .hero .text{
+    flex: 5;
+   }
+   .hero .text h2{
+    font-size: 45px;
+   }
+
+   .hero .text .link{
+    margin-top: 30px;
+   }
+
+   .hero .text .link a{
+    display: inline-block;
+    padding: 5px 10px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+   }
+
+   .hero .text .link a:hover{
+    color: blue;
+    border: 2px solid blue;
+   }
+
+   .hero .headshot{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+   }
+
+   .hero .headshot img{
+    width: 350px;
+    border-radius: 50%;
+   }
+
+    /* About us section 2*/
+
+    .aboutus{
+        padding: 0 50px;
+        margin-bottom: 100px;
+    }
+
+    .aboutus h2{
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .aboutus .text{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .aboutus .cells{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .aboutus .cells .cell{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 200px;
+        padding: 10px 20px;
+        margin: 10px;
+        border: 1.5px solid #d3d3d3;
+        border-radius: 5px;
+        
+    }
+    /* my own thought */
+    .aboutus .cells .cell:hover{
+    border: 1.5px solid black;
+    transform: scale(1.2);
+    }
+
+    .aboutus .cells .cell img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .aboutus .cells .cell span{
+        font-size: 18px;
+    }
+
+    /* section 3 experience  */
+    .experience{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        margin-bottom: 100px;
+    }
+    .experience .left{
+        flex: 1;
+    }
+    .experience .right{
+        flex: 1;
+    }
+    .experience .left h2{
+        font-size: 35px;
+    }
+    .experience .left p{
+        margin-top: 20px;
+    }
+    .right video{
+        width: 100%;
+        border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.2);
+    }
+
+
+
+
+    /* section 4 contact us  */
+    .contact{
+        padding: 0 50px;
+        margin-bottom: 100px;
+    }
+
+    .contact h2{
+        font-size: 35px;
+    }
+    .contact .group{
+        display: flex;
+        gap: 50px;
+    }
+
+    .contact .group .text{
+        flex: 3;
+        margin-top: 20px;
+    }
+
+    .contact .group form{
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .group form input,
+    .contact .group form textarea{
+        font-family: 'Poppins', sans-serif;
+        border: 2px solid rgb(78, 171, 237);
+        background-color: transparent;
+        padding: 10px;
+        margin-bottom: 15px;
+        outline: none;
+        resize: none;
+    }
+
+    .contact .group form button{
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        background-color: rgb(78, 171, 237);
+        border: none;
+        height: 50px;
+        cursor: pointer;
+        transition: .1s;
+    }
+    .contact .group form button:hover{
+        filter: brightness(.9);
+    }
+
+
+
+    
+   /* MEDIA TAG FOR RESPONSIVENESS */
+
+      @media(max-width: 600px){
+    /* for navbar */
+    nav{
+        padding: 0 20px;
+
+    }
+    nav .right a span{
+        display: none;
+    }
+
+    /* for section 1 hero  */
+    .hero{
+        padding: 0 20px;
+    }
+
+    .hero .text h2{
+        font-size: 30px;
+    }
+
+    /* for section 2 about us */
+    .aboutus{
+        padding: 0 20px;
+    }
+
+    .aboutus .cells .cell span{
+        font-size: 16px
+    }
+
+    /* section3 experience  */
+    .experience{
+        padding: 0 20px;
+    }
+
+    /* for section 4  */
+    .contact{
+    padding: 0 20px;
+    }
+
+   }
+
+   @media(max-width: 850px){
+    /* for section 1 */
+    .hero .text h2{
+        font-size: 35px;
+    }
+   }
+
+   @media(max-width: 740px){
+    /* for section1 */
+    .hero{
+        flex-direction: column-reverse;
+    }
+    .hero .headshot img{
+        width: 300px;
+    }
+
+    /* for section 4  */
+    .contact .group{
+        flex-direction: column;
+    }
+
+    /* section 3 .experience  */
+    .experience{
+        flex-direction: column;
+    }
+    .experience .left {
+        flex: 8;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .experience .right{
+        flex: 2;
+    }
+
+
+   }
